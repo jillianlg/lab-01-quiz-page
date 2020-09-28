@@ -3,8 +3,8 @@ import { makeItYes } from './make-it-yes.js';
 
 // initialize state
 const button = document.getElementById('promptButton');
-
+console.log(button);
 
 const results = document.getElementById('view-results');
-  console.log(results);
+console.log(results);
 // set event listeners to update state and DOM
