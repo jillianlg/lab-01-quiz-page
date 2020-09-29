@@ -62,10 +62,14 @@ button.addEventListener('click', () => {
         results.style.borderColor = 'yellow';
 
     } else if (correctGuesses === 3){
-        results.textContent = `Great job ${userName}!, you got ${correctGuesses} out of 3. That's ${convertPercent}%. Try again and remember I am lying about one of these things!`;
+        results.textContent = `Great job ${userName}!, you got ${correctGuesses} out of 3. That's ${convertPercent}%.`;
         results.style.borderColor = 'green';
     }
     
 });
 
-// window.location.reload();
+// ran out of time to get the refresh button working.
+// document.getElementById('playAgian').addEventListener('click', () => {
+//   console.log('it worled');
+//     window.location.reload();
+// });
