@@ -1,7 +1,7 @@
 
 body {
     --color1: #ffffff;
-    --color2: #ffffff;
+    --color2: #afbdd5;
     --color3: #869dc4;
     --color4: #ffffff;
     --color5: #ffffff;
@@ -24,7 +24,7 @@ body {
     --gutter: 10px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--color2);
 }
 
@@ -49,6 +49,7 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    line-height: 17pt;
 }
 
 header {
@@ -71,15 +72,17 @@ h2 {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 .gutter-right {
     margin-right: 20px;
 }
 
-/* .main-logo {
-    animation: pulse 5s infinite ease-in-out;
-} */
+#view-results {
+    background-color: var(--color2);
+    border: solid 2px var(--color2);
+}
 
 header img {
     height: var(--header-height);
@@ -97,6 +100,7 @@ p {
     margin: 20px;
     font-size: 1.3rem;
     font-weight: bold;
+    font-family: 'Oswald', sans-serif;
 }
 img {
     height: 250px;

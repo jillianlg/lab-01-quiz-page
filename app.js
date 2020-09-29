@@ -42,11 +42,30 @@ button.addEventListener('click', () => {
       // track the STATE of their correct guesses
         correctGuesses++;
     }
+     // alert
+    alert('Nicely done! Check the page for your results.');
 
-    // 1) Alert the user that the quiz is complete and their results will now be written to the webpage.
-    alert('Nicely done! Check the page for your results');
+    // results response
+    const convertPercent = Math.round((correctGuesses / 3) * 100);
+    // results.textContent = `Hey ${userName}, you got ${correctGuesses} right out of 3.`;
 
-    // 1) Write a response to the page with their name and number correct out of the total.
-    results.textContent = `Hey ${userName}, you got ${correctGuesses} right out of 3.`;
+    if (correctGuesses === 0){
+        results.textContent = `Eep ${userName}!, you got ${correctGuesses} out of 3. That's only ${convertPercent}%. Try again and remember I am lying about one of these things!`;
+        results.style.borderColor = 'red';
+
+    } else if (correctGuesses === 1){
+        results.textContent = `Yikes ${userName}!, you only got ${correctGuesses} out of 3. That's only ${convertPercent}%. Try again and remember I am lying about one of these things!`;
+        results.style.borderColor = 'orange';
+
+    } else if (correctGuesses === 2){
+        results.textContent = `So close ${userName}!, you got ${correctGuesses} out of 3. That's ${convertPercent}%. Try again and remember I am lying about one of these things!`;
+        results.style.borderColor = 'yellow';
+
+    } else if (correctGuesses === 3){
+        results.textContent = `Great job ${userName}!, you got ${correctGuesses} out of 3. That's ${convertPercent}%. Try again and remember I am lying about one of these things!`;
+        results.style.borderColor = 'green';
+    }
+    
 });
 
+// window.location.reload();
